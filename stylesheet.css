@@ -1,0 +1,444 @@
+@font-face {
+    font-family: "Source Code Variable";
+    src: url(source-code-pro/SourceCodePro-Regular.otf);
+    font-weight: 200;
+}
+
+body {
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #4d4d4d;
+    font-family: "Source Code Visable, Avenir Next", "Avenir", sans-serif;
+}
+
+.menu_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px 0 16px;
+    background: none;
+}
+
+.logo img {
+    width: 100%;
+    height: 100px;
+    text-align: right;
+}
+
+.top-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+}
+
+#top-image-index {
+    background-image: url(images/scott-webb-102177-unsplash.jpg);
+}
+
+#top-image-about {
+    background-image: url(images/curtis-macnewton-316895-unsplash.jpg);
+}
+
+#top-image-kids {
+    background-image: url(images/reading-2762010_1280.jpg);
+}
+
+#top-image-teachers {
+    background-image: url(images/people-219985_1280.jpg);
+}
+
+.page-image {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.section-header,
+.section-header h1 {
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    margin: 30px 0;
+    padding: 25px 10px;
+    font-style: italic;
+    color: #FFF;
+    background: #bc8a96;
+}
+
+.section-header h1 {
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 200;
+    margin: 10px 0;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#page-footer a {
+    color: #232323;
+}
+
+#page-footer a:hover {
+    color: #ffffff;
+}
+
+.container_primarybutton {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.primarybutton {
+    display: inline-block;
+    /* to make it size properly */
+    background: #FFCB55;
+    color: #232323;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.primarybutton:hover {
+    border-radius: 10px;
+    color: #fff;
+}
+
+.opening-hours {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0;
+    padding: 16px 10px;
+}
+
+
+/* circles on the explore page*/
+
+.grid {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-item {
+    border-radius: 65px;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    -webkit-transition: all 0.2s;
+    /* Safari */
+    transition: all 0.2s;
+}
+
+.circle-container a {
+    color: #ffffff;
+}
+
+.circle-container a:hover {
+    color: #FF8C1A;
+}
+
+.background-purple {
+    background: #bc8a96;
+}
+
+.background-yellow {
+    background: #FFCB55;
+}
+
+.background-green {
+    background: #396b05;
+}
+
+.circle-item:hover {
+    -ms-transform: scale(1.2, 1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2, 1.2);
+    /* Safari */
+    transform: scale(1.2, 1.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*
+* Made by Erik Terwan
+* 24th of November 2015
+* MIT License
+*
+*
+* If you are thinking of using this in
+* production code, beware of the browser
+* prefixes
+*/
+
+.menu-item {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+.menu-item a:hover {
+    color: #bc8a96;
+}
+
+.menu-item.active {
+    text-decoration: underline;
+}
+
+.menu-item a {
+    color: #ffffff;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    width: 40px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+
+/*
+* Just a quick hamburger
+*/
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #bc8a96;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+
+/* 
+Lines when the menu is active.
+*/
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #FFF;
+}
+
+
+/*
+* But let's hide the middle one.
+*/
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+/*
+* Ohyeah and the last one should go the other direction
+*/
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+/*
+* Make this absolute positioned
+* at the top left of the screen
+*/
+
+#menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 75px;
+    padding-left: 14px;
+    margin: 0;
+    background: #396b05;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#menu li.call-to-action {
+    display: block;
+    margin-top: 40px;
+}
+
+#menu li.call-to-action a {
+    padding: 15px 15px;
+    background: #bc8a96;
+    color: #ffffff;
+    display: inline;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#menu li.call-to-action a:hover {
+    color: #396b05;
+    font-weight: bold;
+}
+
+
+/*
+* And let's slide it in from the left
+*/
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+#page-footer {
+    background: #FFCB55;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
+    font-weight: 100;
+    padding: 30px 0px;
+    color: #232323;
+}
+
+#page-footer .footer-item {
+    text-align: center;
+    width: 100%;
+    padding: 20px 15px;
+}
+
+.logo-footer {
+    height: 73px;
+    width: 200px;
+}
+
+
+/* desktop */
+
+@media only screen and (min-width: 600px) {
+    #menu {
+        width: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .top-image {
+        height: 500px;
+        background-position: center;
+    }
+    p {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .flexbox-container {
+        display: flex;
+        justify-content: center;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .flexbox-container>div {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    #page-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #page-footer .footer-item {
+        width: auto;
+    }
+    .opening-hours {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .grid {
+        flex-direction: row;
+        justify-content: space-around;
+        min-height: 70vh;
+    }
+    .circle-item {
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+    }
+}
