@@ -72,9 +72,9 @@ h2 {
     text-align: center;
     margin: 30px 0;
     padding: 25px 10px;
-    font-style: italic;
-    color: #FFF;
-    background: #bc8a96;
+    font-weight: bold;
+    color: #4d4d4d;
+    background: #FFD73C;
 }
 
 .section-header h1 {
@@ -115,8 +115,8 @@ p {
 .primarybutton {
     display: inline-block;
     /* to make it size properly */
-    background: #FFCB55;
-    color: #232323;
+    background: #175E36;
+    color: #ffffff;
     border-radius: 10px;
     text-decoration: none;
     padding: 15px 15px;
@@ -171,15 +171,15 @@ p {
 }
 
 .background-purple {
-    background: #bc8a96;
+    background: #9D1534;
 }
 
 .background-yellow {
-    background: #FFCB55;
+    background: #015288;
 }
 
 .background-green {
-    background: #396b05;
+    background: #175E36;
 }
 
 .circle-item:hover {
@@ -192,6 +192,74 @@ p {
 
 a {
     text-decoration: none;
+}
+
+
+/* ticket page*/
+
+.dropdown select {
+    border: 0 !important;
+    background: #4d4d4d;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 20px;
+    width: 150px;
+    height: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+}
+
+.ticket-qty-minus,
+.ticket-qty-plus {
+    background: none;
+    border: none;
+}
+
+.ticket-button {
+    background: #eee;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.option-text {
+    max-width: 260px;
+    width: 28%;
+}
+
+.option-price {
+    width: 85px;
+}
+
+.continue-button {
+    background-color: #4d4d4d;
+    text-align: center;
+    color: #ffffff;
+    max-width: 260px;
+    width: 28%;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin: 20px 20px;
 }
 
 
@@ -363,7 +431,7 @@ Lines when the menu is active.
 }
 
 #page-footer {
-    background: #FFCB55;
+    background: #175E36;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -371,7 +439,7 @@ Lines when the menu is active.
     margin: 20px 0 0 0;
     font-weight: 100;
     padding: 30px 0px;
-    color: #232323;
+    color: #ffffff;
 }
 
 #page-footer .footer-item {
@@ -402,7 +470,7 @@ Lines when the menu is active.
         font-size: 16px;
     }
     h3 {
-        font-size: 20px;
+        font-size: 25px;
     }
     h4 {
         font-size: 18px;
