@@ -30,9 +30,9 @@ MENU START
 */
 
 #navigation-logo img {
-    width: 580px;
-    height: 100px;
-    padding-left: 50px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
 }
 
 img {
@@ -46,7 +46,7 @@ img {
 
 #main-menu li,
 #right-menu li {
-    display: inline;
+    display: inline-block;
     padding: 10px 10px;
 }
 
@@ -268,13 +268,49 @@ fieldset {
     border: none;
 }
 
-.ticket-qty-minus,
-.ticket-qty-plus {
+#adults-ticket-qty-minus,
+#adults-ticket-qty-plus {
     background: none;
     border: none;
 }
 
-.ticket-button {
+#adults-ticket-button {
+    background: #eee;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+#seniors-ticket-qty-minus,
+#seniors-ticket-qty-plus {
+    background: none;
+    border: none;
+}
+
+#seniors-ticket-button {
+    background: #eee;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+#students-ticket-qty-minus,
+#students-ticket-qty-plus {
+    background: none;
+    border: none;
+}
+
+#students-ticket-button {
+    background: #eee;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+#childrens-ticket-qty-minus,
+#childrens-ticket-qty-plus {
+    background: none;
+    border: none;
+}
+
+#childrens-ticket-button {
     background: #eee;
     border-radius: 5px;
     padding: 20px 30px;
@@ -300,7 +336,7 @@ fieldset {
     text-align: center;
     color: #ffffff;
     max-width: 260px;
-    width: 28%;
+    width: 60%;
     border: none;
     font-size: 16px;
     font-weight: bold;
@@ -339,6 +375,11 @@ fieldset {
         width: auto;
         padding-left: 40px;
         padding-right: 40px;
+    }
+    #navigation-logo img {
+        width: 580px;
+        height: 100px;
+        padding-left: 50px;
     }
     .top-image {
         height: 500px;
@@ -386,5 +427,8 @@ fieldset {
         border-radius: 100px;
         width: 200px;
         height: 200px;
+    }
+    .continue-button {
+        width: 36%;
     }
 }
